@@ -28,7 +28,8 @@ $scope.CheckIftoMuch = function () {
      $scope.message= "Please enter data first"  ; 
     break;
     case 1:
-       if(($scope.text2 = " ") || ($scope.text2 = null)) {
+       if($scope.text2 === "" || $scope.text2 === undefined
+            || $scope.text2.length === 0) {
      
             $scope.message="Please enter data first" ;
     
